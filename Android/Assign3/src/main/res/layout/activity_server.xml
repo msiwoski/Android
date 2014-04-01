@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_server"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="comp4985.matjordan.assign3.ServerActivity"
+    tools:ignore="MergeRootFrame">
+
+    <TextView
+        android:id="@+id/server_ip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/server_port"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/default_port"
+        android:hint="@string/edit_port" />
+
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:id="@+id/server_speech"
+        android:text="Text_To_Speech"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_server_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_begin"
+            android:onClick="btn_server_begin_click"/>
+
+        <Button
+            android:id="@+id/btn_server_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_stop"
+            android:onClick="btn_server_stop_click"/>
+
+    </LinearLayout>
+
+</LinearLayout>
